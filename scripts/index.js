@@ -1,26 +1,3 @@
-function animaModal(modalID){
-    const anima_modal = document.getElementById(modalID)
-    anima_modal.classList.add("sign-in-js")
-    anima_modal.classList.remove("sign-up-js")
-}
-
-function animaModal2(modalID){
-    const anima_modal = document.getElementById(modalID)
-    anima_modal.classList.add("sign-up-js")
-    anima_modal.classList.remove("sign-in-js")
-}
-
-var btnSignin = document.querySelector("#signin");
-var btnSignup = document.querySelector("#signup");
-
-btnSignin.addEventListener("click", function () {
-    animaModal('modal-cadastro'); 
- });
-
- btnSignup.addEventListener("click", function () {
-    animaModal2('modal-cadastro'); 
-})
-
 //Autenticar Google Account
 function onSignIn(googleUser) {
     // Useful data for your client-side scripts:
